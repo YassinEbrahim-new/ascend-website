@@ -1,0 +1,1 @@
+function e(e){let t=Math.max(0,e||0);return t<1e3?1:Math.floor((t-1e3)/2e3)+2}function t(e){return e<=1?0:1e3+(e-2)*2e3}function n(n){let r=e(n),i=t(r),a=t(r+1)-i;return a<=0?100:Math.min(100,(n-i)/a*100)}function r(n){let r=t(e(n)+1);return Math.max(0,r-n)}export{r as i,n,t as r,e as t};
